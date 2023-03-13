@@ -1,6 +1,6 @@
 public class diff21 {
     public static void main(String [] args ){
-        System.out.println(9>20);
+        System.out.println(diff(100);
         System.out.println(15>25);
         System.out.println(12<19);
     }
