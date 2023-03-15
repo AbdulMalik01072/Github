@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/AbcProject/AbcProject.iml" filepath="$PROJECT_DIR$/AbcProject/AbcProject.iml" />
+      <module fileurl="file://$PROJECT_DIR$/AbcProject2/AbcProject2.iml" filepath="$PROJECT_DIR$/AbcProject2/AbcProject2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/AbcProject3/AbcProject3.iml" filepath="$PROJECT_DIR$/AbcProject3/AbcProject3.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/Github.iml" filepath="$PROJECT_DIR$/.idea/Github.iml" />
+      <module fileurl="file://$PROJECT_DIR$/IntValue/IntValue.iml" filepath="$PROJECT_DIR$/IntValue/IntValue.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MonkeySmileProject/MonkeySmileProject.iml" filepath="$PROJECT_DIR$/MonkeySmileProject/MonkeySmileProject.iml" />
+      <module fileurl="file://$PROJECT_DIR$/PracticeProject1/PracticeProject1.iml" filepath="$PROJECT_DIR$/PracticeProject1/PracticeProject1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SleepIn2/SleepIn2.iml" filepath="$PROJECT_DIR$/SleepIn2/SleepIn2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Sleepinproject/Sleepinproject.iml" filepath="$PROJECT_DIR$/Sleepinproject/Sleepinproject.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Strings/Strings.iml" filepath="$PROJECT_DIR$/Strings/Strings.iml" />
+      <module fileurl="file://$PROJECT_DIR$/chocalate/chocalate.iml" filepath="$PROJECT_DIR$/chocalate/chocalate.iml" />
+      <module fileurl="file://$PROJECT_DIR$/diff21/diff21.iml" filepath="$PROJECT_DIR$/diff21/diff21.iml" />
+      <module fileurl="file://$PROJECT_DIR$/front/front.iml" filepath="$PROJECT_DIR$/front/front.iml" />
+      <module fileurl="file://$PROJECT_DIR$/makes10/makes10.iml" filepath="$PROJECT_DIR$/makes10/makes10.iml" />
+      <module fileurl="file://$PROJECT_DIR$/missingChar/missingChar.iml" filepath="$PROJECT_DIR$/missingChar/missingChar.iml" />
+      <module fileurl="file://$PROJECT_DIR$/nearHundered/nearHundered.iml" filepath="$PROJECT_DIR$/nearHundered/nearHundered.iml" />
+      <module fileurl="file://$PROJECT_DIR$/parrotTrouble/parrotTrouble.iml" filepath="$PROJECT_DIR$/parrotTrouble/parrotTrouble.iml" />
+      <module fileurl="file://$PROJECT_DIR$/posNeg/posNeg.iml" filepath="$PROJECT_DIR$/posNeg/posNeg.iml" />
+      <module fileurl="file://$PROJECT_DIR$/posNegative/posNegative.iml" filepath="$PROJECT_DIR$/posNegative/posNegative.iml" />
+      <module fileurl="file://$PROJECT_DIR$/untitled/untitled.iml" filepath="$PROJECT_DIR$/untitled/untitled.iml" />
+    </modules>
+  </component>
+</project>
