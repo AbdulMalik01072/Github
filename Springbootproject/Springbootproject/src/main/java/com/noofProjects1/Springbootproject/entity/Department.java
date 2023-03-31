@@ -1,7 +1,32 @@
 package com.noofProjects1.Springbootproject.entity;
 
-public class Deparment {
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+import jakarta.validation.constraints.*;
+import org.hibernate.validator.constraints.Length;
+
+@Entity
+public class Department {
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private long departmentId;
+
+@NotBlank(message = "Please Add Department Name")
+/*@Length(max = 5,min = 1)
+@Size(max = 10,min = 0)
+@Email
+@Positive
+@Negative
+@PositiveOrZero
+@NegativeOrZero
+@Future
+@FutureOrPresent
+@Past
+@PastOrPresent
+
+ */
     private String departmentName;
     private String departmentAddress;
     private  String departmentCode;
@@ -38,7 +63,7 @@ public class Deparment {
         this.departmentCode = departmentCode;
     }
 
-    public Deparment(long departmentId, String departmentName, String departmentAddress, String departmentCode) {
+    public Department(long departmentId, String departmentName, String departmentAddress, String departmentCode) {
         this.departmentId = departmentId;
         this.departmentName = departmentName;
         this.departmentAddress = departmentAddress;
@@ -46,6 +71,16 @@ public class Deparment {
     }
 
 
-    public Deparment() {
+    public Department() {
+    }
+
+    @Override
+    public String toString() {
+        return "Deparment{" +
+                "departmentId=" + departmentId +
+                ", departmentName='" + departmentName + '\'' +
+                ", departmentAddress='" + departmentAddress + '\'' +
+                ", departmentCode='" + departmentCode + '\'' +
+                '}';
     }
 }
