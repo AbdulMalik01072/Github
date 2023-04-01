@@ -1,6 +1,7 @@
 package com.noofProjects1.Springbootproject.controller;
 
 import com.noofProjects1.Springbootproject.entity.Department;
+import com.noofProjects1.Springbootproject.error.DepartmentNotFoundException;
 import com.noofProjects1.Springbootproject.service.DepartmentService;
 import com.noofProjects1.Springbootproject.service.DepartmentServiceImpl;
 import jakarta.validation.Valid;
@@ -31,7 +32,7 @@ public class DepartmentController {
     }
 
     @GetMapping("/department/{id}")
-    public Department fetchDepartmentById(@PathVariable("id") Long departmentId) {
+    public Department fetchDepartmentById(@PathVariable("id") Long departmentId) throws DepartmentNotFoundException {
         return departmentService.fetchDepartmentById(departmentId);
     }
 
