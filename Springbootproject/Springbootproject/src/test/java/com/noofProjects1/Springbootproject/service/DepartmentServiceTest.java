@@ -2,13 +2,12 @@ package com.noofProjects1.Springbootproject.service;
 
 import com.noofProjects1.Springbootproject.entity.Department;
 import com.noofProjects1.Springbootproject.repository.DepartmentRepository;
-import org.junit.jupiter.api.BeforeAll;
-import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.*;
 import org.mockito.Mockito;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.boot.test.mock.mockito.MockBean;
+import org.springframework.boot.test.mock.mockito.MockBeans;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -32,11 +31,12 @@ class DepartmentServiceTest {
                 .thenReturn(department);
     }
     @Test
+    @DisplayName("Get Data based on Valid Department Name")
     public void whenValidDepartmentName_thenDepartmentShouldFound(){
         String departmentName = "IT";
         Department found=
                 departmentService.fetchDepartmentByName(departmentName);
 
-        assertEquals(departmentName,found.getDepartmentName());
+        assertEquals(departmentName, found.getDepartmentName());
     }
 }

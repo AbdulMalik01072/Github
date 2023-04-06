@@ -6,8 +6,8 @@ import com.noofProjects1.Springbootproject.error.DepartmentNotFoundException;
 import java.util.List;
 
 public interface DepartmentService {
-     Department fetchDepartmentByName(String departmentName);
-    Department saveDepartment(Department department);
+
+    public Department saveDepartment(Department department);
 
     public List<Department> fetchDepartmentList();
 
@@ -15,7 +15,10 @@ public interface DepartmentService {
 
     public void deleteDepartmentById(Long departmentId);
 
-    public Department updateDepartment(Long depatmentId, Department department);
+    public Department updateDepartment(Long departmentId, Department department);
 
+      Department fetchDepartmentByName(String departmentName);
 }
+
+
 

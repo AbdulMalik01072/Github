@@ -23,6 +23,7 @@ public class DepartmentServiceImpl implements DepartmentService{
 
     @Override
     public List<Department> fetchDepartmentList() {
+
         return departmentRepository.findAll();
     }
 
@@ -43,8 +44,8 @@ public class DepartmentServiceImpl implements DepartmentService{
     }
 
     @Override
-    public Department updateDepartment(Long depatmentId, Department department) {
-        Department depDB = departmentRepository.findById(depatmentId).get();
+    public Department updateDepartment(Long departmentId, Department department) {
+        Department depDB = departmentRepository.findById(departmentId).get();
         if (Objects.nonNull(department.getDepartmentName()) &&
                 !"".equalsIgnoreCase(department.getDepartmentName())) {
             depDB.setDepartmentName(department.getDepartmentName());
