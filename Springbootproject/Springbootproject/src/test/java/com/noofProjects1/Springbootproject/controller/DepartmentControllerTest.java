@@ -61,8 +61,12 @@ class DepartmentControllerTest {
     }
 
     @Test
-    void fetchDepartmentById() throws DepartmentNotFoundException {
+    void fetchDepartmentById() throws Exception {
         Mockito.when(departmentService.fetchDepartmentById(1L))
                 .thenReturn(department);
+        mockMvc.perform(get("/departments/1")
+                .contentType(MediaType.APPLICATION_JSON))
+                .andExpect(status().isOk())
+                .andExpect(jsonPath("$.departmentName").value(department.getDepartmentName()));
     }
 }
