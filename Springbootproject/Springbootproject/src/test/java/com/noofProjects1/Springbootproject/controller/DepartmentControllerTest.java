@@ -33,7 +33,7 @@ class DepartmentControllerTest {
 
     @BeforeEach
     void setUp() {
-        department=Department.builder()
+        department = Department.builder()
                 .departmentAddress("Hyderabad")
                 .departmentCode("IT-06")
                 .departmentName("IT")
@@ -51,22 +51,24 @@ class DepartmentControllerTest {
         Mockito.when(departmentService.saveDepartment(inpudepartment))
                 .thenReturn(department);
         mockMvc.perform(post("/departments")
-                 .contentType(MediaType.APPLICATION_JSON)
-                .content("{\n" +
-                        "\t\"departmentName\":\"IT\",\n" +
-                        "\t\"departmentAddress\":\"Hyderabad\",\n" +
-                        "\t\"departmentCode\":\"IT-06\"\n" +
-                        "}"))
+                        .contentType(MediaType.APPLICATION_JSON)
+                        .content("{\n" +
+                                "\t\"departmentName\":\"IT\",\n" +
+                                "\t\"departmentAddress\":\"Hyderabad\",\n" +
+                                "\t\"departmentCode\":\"IT-06\"\n" +
+                                "}"))
                 .andExpect(status().isOk());
     }
+
 
     @Test
     void fetchDepartmentById() throws Exception {
         Mockito.when(departmentService.fetchDepartmentById(1L))
                 .thenReturn(department);
-        mockMvc.perform(get("/departments/1")
+        mockMvc.perform(get("/department/1")
                 .contentType(MediaType.APPLICATION_JSON))
                 .andExpect(status().isOk())
-                .andExpect(jsonPath("$.departmentName").value(department.getDepartmentName()));
+                .andExpect(jsonPath("$.departmentName")
+                        .value(department.getDepartmentName()));
     }
 }
