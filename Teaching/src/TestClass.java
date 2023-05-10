@@ -1,19 +1,11 @@
-import java.sql.SQLOutput;
-
 public class TestClass {
 
     public static void main(String[] args) {
-
-    }
-
-    public static String concatString() {
-
-        StringBuffer Sb = new StringBuffer("Java");
-        for (int i = 0; i <= 10000; i++);{
-            Sb.append("class");
+        StringBuffer SB = new StringBuffer("nittin");
+        for (int i=0;i<=1000;i++){
+            SB.reverse();
         }
-        System.out.println("Sb");
-        return "Sb";
+        System.out.println("nittin");
+      }
     }
-}
 
