@@ -13,7 +13,7 @@ public class TokenizerClass {
         StringTokenizer ST = new StringTokenizer(s, "");
         while (ST.hasMoreTokens()) {
              S1 = ST.nextToken();
-            System.out.println(new StringBuilder().reverse(S1).toString());
+            System.out.println(new StringBuilder().reverse().toString());
         }
     }
 }
