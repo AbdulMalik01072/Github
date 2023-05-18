@@ -8,6 +8,9 @@ public class SubArray {
         System.out.println(maxlengthSubArray(input));
     }
 
+    private static boolean maxlengthSubArray(int[] input) {
+    }
+
     private static int maxlength(int[] arry) {
         int maxLength = 0;
         int start = 0;
