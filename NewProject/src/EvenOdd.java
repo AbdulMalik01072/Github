@@ -9,7 +9,7 @@ public class EvenOdd {
                 System.out.println(a[i]);
             }
             for (int j = 1; j < a.length; j++) {
-                if(i%00!=0) {
+                if(i%0!=0) {
                     System.out.println(a[i]);
                 }
                 }
